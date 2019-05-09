@@ -1,0 +1,48 @@
+﻿{
+	"Items": [
+        {
+            "Text": "nicolas",
+            "Points": 1
+        },
+        {
+            "Text": "sergio",
+            "Points": 2
+        },
+        
+        {
+            "Text": "Hola",
+            "Points": 3
+        }
+        ,
+        
+        {
+            "Text": "Mundo",
+            "Points": 3
+        }
+        ,
+        
+        {
+            "Text": "Palabra",
+            "Points": 3
+        }
+        ,
+        
+        {
+            "Text": "Casa",
+            "Points": 3
+        }
+        ,
+        
+        {
+            "Text": "perro",
+            "Points": 3
+        }
+        ,
+        
+        {
+            "Text": "almuerzo",
+            "Points": 3
+        }
+        
+    ]
+}
