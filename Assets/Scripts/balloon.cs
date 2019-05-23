@@ -11,6 +11,7 @@ public class balloon : MonoBehaviour {
 	private Rigidbody2D rg;
 	public GameMaster gm;
 	public float speed = 30f;
+	public Sprite pop; 
 	// Use this for initialization
 	void Start () {
 		rg = GetComponent<Rigidbody2D> ();
@@ -21,11 +22,13 @@ public class balloon : MonoBehaviour {
 	void Update () {
 		rg.AddForce (new Vector2 (0.0f, speed));
 		if (transform.position.y > maxheigth) {
+			
 			DestroyBalloon ();
 		}
 	}
 
 	public void DestroyBalloon(){
+		
 		GetComponentInParent<MovTank> ().CurrentWords -= 1;
 		gm.RemoveBalloon (word);
 		Destroy (transform.gameObject);

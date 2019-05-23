@@ -37,6 +37,7 @@ public class MovTank : MonoBehaviour
 			gm.AddBalloon (randomWord.Text, randomWord.Points);
 			balloonPref.GetComponent<balloon> ().word = randomWord.Text;
 			balloonPref.name = randomWord.Text;
+			balloonPref.GetComponent<SpriteRenderer> ().color =  Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
 			Instantiate (balloonPref, spawnBallon.position , Quaternion.identity, transform);
 			CurrentWords++;
 		}
